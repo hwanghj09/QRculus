@@ -133,3 +133,16 @@ python -m qr_calculus export-report --input results/final --out reports/보고�
 | [참고문헌](reports/참고문헌.md) · [연구 명세](specs/01_연구계획서_완전명세.md) | 공개 출처와 실험 설계 |
 
 테스트 12개와 실제 측정값에 대한 **T01–T19**를 실행했다. 스모크는 144행과 72조건, 본실험은 7,200행과 72조건으로 검증됐다. T19는 사용자가 제공한 정보를 넣은 제출용 PDF에서 통과했다. 증빙에는 검증 결과와 형식만 기록했다. [자동 검증 보고서](results/final/qa_report.md)
+
+
+---
+
+## QRculus 2.0 — 무작위 QR코드 분홍색 가림 연구 (계획)
+
+기존의 **모듈 반전 본실험(7,200회)**과 구별되는 후속 연구를 계획했다. 서로 다른 QR코드 100개에 분홍색 불투명 가림(`#FF69B4`)을 적용하고, 분산형·집중형 가림 및 L/M/Q/H 오류 정정 등급별 판독 성공률을 비교한다. 조건별 원자료에서 다항함수를 유도한 뒤 미적분Ⅰ의 도함수와 정적분으로 분석할 예정이다.
+
+- [상세 연구·개발계획서](specs/pink_occlusion_v2/QRculus_분홍색가림_실험_연구개발계획서.md)
+- [AI 구현 지시문](specs/pink_occlusion_v2/AI_프로젝트_구현_지시문.md)
+- [신규 실험 설정 예시 JSON](specs/pink_occlusion_v2/pink_occlusion_v2.example.json)
+
+**상태: 연구 기획 완료 / 신규 112,400회 판독 실험 미실행.** 기존 `results/final/`의 결과를 QRculus 2.0의 데이터로 사용하지 않는다.
