@@ -1,0 +1,17 @@
+﻿payload_id,level,mask_type,repeat_id,target_pct,event,detail
+qr028,L,clustered,3,8,degenerate_source_points,"First main-run call stopped at this key. A separate diagnostic call on the identical RGB hash reproduced OpenCV 4.13.0 ImplContour::decode, Invalid QR code source points, contourArea(src_points) is 0. Checkpoint recovered as an undetected failed decode; the diagnostic call is excluded from the main study."
+qr048,M,clustered,7,3,degenerate_source_points,"OpenCV(4.13.0) /io/opencv/modules/objdetect/src/qrcode.cpp:2977: error: (-2:Unspecified error) in function 'virtual std::string cv::ImplContour::decode(cv::InputArray, cv::InputArray, cv::OutputArray) const'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0"
+qr048,M,clustered,7,4,degenerate_source_points,"OpenCV(4.13.0) /io/opencv/modules/objdetect/src/qrcode.cpp:2977: error: (-2:Unspecified error) in function 'virtual std::string cv::ImplContour::decode(cv::InputArray, cv::InputArray, cv::OutputArray) const'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0"
+qr048,M,clustered,7,5,degenerate_source_points,"OpenCV(4.13.0) /io/opencv/modules/objdetect/src/qrcode.cpp:2977: error: (-2:Unspecified error) in function 'virtual std::string cv::ImplContour::decode(cv::InputArray, cv::InputArray, cv::OutputArray) const'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0"

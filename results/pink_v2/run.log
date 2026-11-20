@@ -1,0 +1,36 @@
+2026-11-20T07:08:40.141018+00:00 preflight: run 2026-11-20T07:08:40.136015+00:00-pink, workers=2
+2026-11-20T07:08:46.425355+00:00 Baseline verified: 400 exact decodes
+2026-11-20T07:08:53.555453+00:00 run: run 2026-11-20T07:08:40.136015+00:00-pink, workers=2
+2026-11-20T07:08:53.564840+00:00 Baseline verified: 400 exact decodes
+2026-11-20T07:09:08.486473+00:00 1/100 payloads completed (qr002)
+2026-11-20T07:09:45.227855+00:00 5/100 payloads completed (qr005)
+2026-11-20T07:10:21.330795+00:00 10/100 payloads completed (qr010)
+2026-11-20T07:11:04.184922+00:00 15/100 payloads completed (qr015)
+2026-11-20T07:11:35.831177+00:00 20/100 payloads completed (qr020)
+2026-11-20T07:12:27.871140+00:00 25/100 payloads completed (qr025)
+2026-11-20T07:12:42.867594+00:00 Interrupted with checkpoints retained: RuntimeError: Decoder failure at qr028/L/clustered/3/8
+Recovered qr028/L/clustered/3/8 from the observed OpenCV geometry error. Diagnostic reproduction excluded from main counts.
+2026-11-20T07:14:41.262149+00:00 run: run 2026-11-20T07:08:40.136015+00:00-pink, workers=2
+2026-11-20T07:14:41.588758+00:00 Baseline verified: 400 exact decodes
+2026-11-20T07:14:42.064461+00:00 1/100 payloads completed (qr002)
+2026-11-20T07:14:42.143478+00:00 5/100 payloads completed (qr006)
+2026-11-20T07:14:42.190604+00:00 10/100 payloads completed (qr011)
+2026-11-20T07:14:42.235470+00:00 15/100 payloads completed (qr016)
+2026-11-20T07:14:42.263757+00:00 20/100 payloads completed (qr020)
+2026-11-20T07:14:42.292710+00:00 25/100 payloads completed (qr025)
+2026-11-20T07:15:06.529870+00:00 30/100 payloads completed (qr030)
+2026-11-20T07:16:00.096708+00:00 35/100 payloads completed (qr036)
+2026-11-20T07:16:34.062518+00:00 40/100 payloads completed (qr040)
+2026-11-20T07:17:17.995387+00:00 45/100 payloads completed (qr045)
+2026-11-20T07:18:08.367124+00:00 50/100 payloads completed (qr050)
+2026-11-20T07:18:49.011128+00:00 55/100 payloads completed (qr055)
+2026-11-20T07:19:32.973039+00:00 60/100 payloads completed (qr060)
+2026-11-20T07:20:11.307249+00:00 65/100 payloads completed (qr065)
+2026-11-20T07:20:51.375829+00:00 70/100 payloads completed (qr070)
+2026-11-20T07:21:36.133098+00:00 75/100 payloads completed (qr076)
+2026-11-20T07:22:13.244077+00:00 80/100 payloads completed (qr080)
+2026-11-20T07:22:59.151127+00:00 85/100 payloads completed (qr085)
+2026-11-20T07:23:42.646530+00:00 90/100 payloads completed (qr090)
+2026-11-20T07:24:28.481089+00:00 95/100 payloads completed (qr095)
+2026-11-20T07:25:04.180194+00:00 100/100 payloads completed (qr099)
+2026-11-20T07:25:08.264062+00:00 Archived 112,400 calls

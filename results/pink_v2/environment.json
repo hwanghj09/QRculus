@@ -1,0 +1,15 @@
+{
+  "python": "3.13.5",
+  "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "architecture": "x86_64",
+  "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "opencv_runtime": "4.13.0",
+  "opencv_threads": 1,
+  "library_versions": {
+    "opencv-python": "4.13.0.92",
+    "numpy": "2.3.5",
+    "qrcode": "8.2",
+    "matplotlib": "3.10.8",
+    "pillow": "12.3.0"
+  }
+}

@@ -1,6 +1,7 @@
 """Three-page Korean report composed from the recorded v2 results."""
 
 from html import escape
+from pathlib import Path
 from tempfile import TemporaryDirectory
 
 from .config import LEVELS, read_json
@@ -50,6 +51,10 @@ def cubic_blocks(key, cubic):
     p = formula(cubic["coefficients"], ("u³", "u²", "u", ""))
     p_prime = formula(cubic["derivative_coefficients"], ("u²", "u", ""))
     low, high = cubic["endpoint_slopes"]
+    vertex = cubic["vertex_u"]
+    comparison = f"P′의 양 끝값 {low:.2f}, {high:.2f}"
+    if vertex is not None and 0 < vertex < x1 - x0:
+        comparison += f"와 꼭짓점 u=−b/(3a)≈{vertex:.4f}에서의 도함수 값"
     return [
         ("p", f"{model_label(key)}의 급락 구간을 감싸는 네 학습점을 택했다. "
          f"u=x−{x0:.4f}이고 유효 범위는 x={x0:.4f}~{x1:.4f}%다. 다음 네 식의 u는 반올림했다."),
@@ -59,7 +64,7 @@ def cubic_blocks(key, cubic):
          "a=(e₂₃−e₁₂)/(u₃−u₁), b=e₁₂−a(u₁+u₂), c=q₁−au₁²−bu₁이다."),
         ("math", f"P(u)≈{p}   ·   P′(u)≈{p_prime}"),
         ("p", (
-            f"P′의 양 끝값 {low:.2f}, {high:.2f}와 구간 안의 꼭짓점 후보 u=−b/(3a)를 비교했다. "
+            f"{comparison}을 비교했다. "
             f"최소는 x={cubic['min_slope_pct']:.4f}%의 {cubic['min_slope']:.2f}%p/%p다. "
             + ("범위·감소 조건을 만족해 모델 추정으로 사용했다." if cubic["valid"] else
                f"성공률 범위가 {cubic['model_min_pct']:.2f}~{cubic['model_max_pct']:.2f}%이고 "

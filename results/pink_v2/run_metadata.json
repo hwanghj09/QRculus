@@ -1,0 +1,65 @@
+{
+  "run_id": "2026-11-20T07:08:40.136015+00:00-pink",
+  "kind": "main",
+  "created_utc": "2026-11-20T07:08:40.136015+00:00",
+  "git_commit": "5a36bc9cb063d4284eb4436d60df48edc670f67b",
+  "config_sha256": "ec7ae5e98f9559f630a7f66b80a2e66934df1f045a2e85becec9a2a39142963c",
+  "seed_base": 2026,
+  "payload_generator": "PCG64 SeedSequence([2026, 1]); 6 independent charset indices; skip duplicate strings",
+  "split_rule": "PCG64 SeedSequence([2026, 2]); shuffle sorted payload IDs; first 80 train",
+  "cubic_selection_rule": "Earliest steepest interval; balance points on either side, then smallest x",
+  "hash_rule": "SHA-256 of contiguous 290×290×3 RGB uint8 pixels in C order",
+  "targets": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    15,
+    20,
+    25,
+    30,
+    40
+  ],
+  "repeats": 10,
+  "expected_calls": 112400,
+  "environment": {
+    "python": "3.13.5",
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "architecture": "x86_64",
+    "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "opencv_runtime": "4.13.0",
+    "opencv_threads": 1,
+    "library_versions": {
+      "opencv-python": "4.13.0.92",
+      "numpy": "2.3.5",
+      "qrcode": "8.2",
+      "matplotlib": "3.10.8",
+      "pillow": "12.3.0"
+    }
+  },
+  "status": "complete",
+  "baseline_success_rate_pct": 100.0,
+  "baseline_calls": 400,
+  "opencv_version": "4.13.0",
+  "git_head_at_creation": "afbceafc26344f79a3677349b47cafdbe9b3d03d",
+  "resume_git_commit": "fedcbec234e41317a4e94d9f82d668ee3021363f",
+  "decoder_recovery": {
+    "recovered_trial": [
+      "qr028",
+      "L",
+      "clustered",
+      3,
+      8
+    ],
+    "diagnostic_calls_outside_main": 1,
+    "retry_of_main_trial": false
+  },
+  "actual_calls": 112400,
+  "completed_utc": "2026-11-20T07:25:08.262734+00:00"
+}
