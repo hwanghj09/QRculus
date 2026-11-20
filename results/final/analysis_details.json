@@ -1,0 +1,972 @@
+{
+  "run_id": "20261119T235639Z-b9c239b5cdd8",
+  "trials": 100,
+  "source_seed_base": 2026,
+  "levels": {
+    "L": {
+      "piecewise": {
+        "segments": [
+          {
+            "start_pct": 0.0,
+            "end_pct": 0.4807692307692308,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 0.4807692307692308,
+            "end_pct": 0.9615384615384616,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 0.9615384615384616,
+            "end_pct": 1.4423076923076923,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 1.4423076923076923,
+            "end_pct": 1.9230769230769231,
+            "start_success_pct": 100.0,
+            "end_success_pct": 22.0,
+            "slope": -162.24,
+            "area": 29.326923076923077
+          },
+          {
+            "start_pct": 1.9230769230769231,
+            "end_pct": 2.4038461538461537,
+            "start_success_pct": 22.0,
+            "end_success_pct": 0.0,
+            "slope": -45.76,
+            "area": 5.288461538461538
+          },
+          {
+            "start_pct": 2.4038461538461537,
+            "end_pct": 2.8846153846153846,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 2.8846153846153846,
+            "end_pct": 3.3653846153846154,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 3.3653846153846154,
+            "end_pct": 3.8461538461538463,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 3.8461538461538463,
+            "end_pct": 4.326923076923077,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 4.326923076923077,
+            "end_pct": 4.8076923076923075,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 4.8076923076923075,
+            "end_pct": 5.288461538461538,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 5.288461538461538,
+            "end_pct": 5.769230769230769,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 5.769230769230769,
+            "end_pct": 6.730769230769231,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 6.730769230769231,
+            "end_pct": 7.211538461538462,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 7.211538461538462,
+            "end_pct": 7.6923076923076925,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 7.6923076923076925,
+            "end_pct": 8.173076923076923,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 8.173076923076923,
+            "end_pct": 10.096153846153847,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          }
+        ],
+        "steepest_index": 3,
+        "area": 178.84615384615384,
+        "mean_success_pct": 17.714285714285715,
+        "range_pct": [
+          0.0,
+          10.096153846153847
+        ]
+      },
+      "cubic": {
+        "points": [
+          {
+            "k": 2,
+            "success_pct": 100.0
+          },
+          {
+            "k": 3,
+            "success_pct": 100.0
+          },
+          {
+            "k": 4,
+            "success_pct": 22.0
+          },
+          {
+            "k": 5,
+            "success_pct": 0.0
+          }
+        ],
+        "k0": 2,
+        "range_pct": [
+          0.9615384615384616,
+          2.4038461538461537
+        ],
+        "coefficients": [
+          22.333333333333332,
+          -106.0,
+          83.66666666666667,
+          100.0
+        ],
+        "exact_coefficients": [
+          "67/3",
+          "-106",
+          "251/3",
+          "100"
+        ],
+        "derivative_coefficients": [
+          67.0,
+          -212.0,
+          83.66666666666667
+        ],
+        "equation": "(67/3)u³ − 106u² + (251/3)u + 100",
+        "derivative_equation": "67u² − 212u + 251/3",
+        "degree": 3,
+        "vertex_u": 1.5820895522388059,
+        "min_derivative_u": 1.5820895522388059,
+        "min_derivative": -84.03482587064677,
+        "min_derivative_per_damage_pct": -174.79243781094527,
+        "min_derivative_pct": 1.722158438576349,
+        "interior_minimum": true,
+        "local_mean_success_pct": 58.25,
+        "model_success_range_pct": [
+          -7.253306928010019,
+          118.23125301845334
+        ],
+        "valid": false,
+        "issues": [
+          "유효 구간에서 성공률이 0~100% 범위를 벗어남",
+          "유효 구간에 성공률이 증가하는 부분이 있음"
+        ],
+        "validation": {
+          "trials_per_k": 30,
+          "first_seed": 2126,
+          "last_seed": 2155,
+          "points": [
+            {
+              "k": 2,
+              "prediction_pct": 100.0,
+              "measured_pct": 100.0,
+              "absolute_error_pp": 0.0
+            },
+            {
+              "k": 3,
+              "prediction_pct": 100.0,
+              "measured_pct": 100.0,
+              "absolute_error_pp": 0.0
+            },
+            {
+              "k": 4,
+              "prediction_pct": 22.0,
+              "measured_pct": 13.333333333333334,
+              "absolute_error_pp": 8.666666666666666
+            },
+            {
+              "k": 5,
+              "prediction_pct": 1.4210854715202004e-14,
+              "measured_pct": 0.0,
+              "absolute_error_pp": 1.4210854715202004e-14
+            }
+          ],
+          "mae_pp": 2.16666666666667
+        }
+      }
+    },
+    "M": {
+      "piecewise": {
+        "segments": [
+          {
+            "start_pct": 0.0,
+            "end_pct": 0.4807692307692308,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 0.4807692307692308,
+            "end_pct": 0.9615384615384616,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 0.9615384615384616,
+            "end_pct": 1.4423076923076923,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 1.4423076923076923,
+            "end_pct": 1.9230769230769231,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 1.9230769230769231,
+            "end_pct": 2.4038461538461537,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 2.4038461538461537,
+            "end_pct": 2.8846153846153846,
+            "start_success_pct": 100.0,
+            "end_success_pct": 29.0,
+            "slope": -147.68,
+            "area": 31.009615384615383
+          },
+          {
+            "start_pct": 2.8846153846153846,
+            "end_pct": 3.3653846153846154,
+            "start_success_pct": 29.0,
+            "end_success_pct": 9.0,
+            "slope": -41.6,
+            "area": 9.134615384615385
+          },
+          {
+            "start_pct": 3.3653846153846154,
+            "end_pct": 3.8461538461538463,
+            "start_success_pct": 9.0,
+            "end_success_pct": 0.0,
+            "slope": -18.72,
+            "area": 2.1634615384615383
+          },
+          {
+            "start_pct": 3.8461538461538463,
+            "end_pct": 4.326923076923077,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 4.326923076923077,
+            "end_pct": 4.8076923076923075,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 4.8076923076923075,
+            "end_pct": 5.288461538461538,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 5.288461538461538,
+            "end_pct": 5.769230769230769,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 5.769230769230769,
+            "end_pct": 6.730769230769231,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 6.730769230769231,
+            "end_pct": 7.211538461538462,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 7.211538461538462,
+            "end_pct": 7.6923076923076925,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 7.6923076923076925,
+            "end_pct": 8.173076923076923,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 8.173076923076923,
+            "end_pct": 10.096153846153847,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          }
+        ],
+        "steepest_index": 5,
+        "area": 282.6923076923077,
+        "mean_success_pct": 28.0,
+        "range_pct": [
+          0.0,
+          10.096153846153847
+        ]
+      },
+      "cubic": {
+        "points": [
+          {
+            "k": 4,
+            "success_pct": 100.0
+          },
+          {
+            "k": 5,
+            "success_pct": 100.0
+          },
+          {
+            "k": 6,
+            "success_pct": 29.0
+          },
+          {
+            "k": 7,
+            "success_pct": 9.0
+          }
+        ],
+        "k0": 4,
+        "range_pct": [
+          1.9230769230769231,
+          3.3653846153846154
+        ],
+        "coefficients": [
+          20.333333333333332,
+          -96.5,
+          76.16666666666667,
+          100.0
+        ],
+        "exact_coefficients": [
+          "61/3",
+          "-193/2",
+          "457/6",
+          "100"
+        ],
+        "derivative_coefficients": [
+          61.0,
+          -193.0,
+          76.16666666666667
+        ],
+        "equation": "(61/3)u³ − (193/2)u² + (457/6)u + 100",
+        "derivative_equation": "61u² − 193u + 457/6",
+        "degree": 3,
+        "vertex_u": 1.5819672131147542,
+        "min_derivative_u": 1.5819672131147542,
+        "min_derivative": -76.4931693989071,
+        "min_derivative_per_damage_pct": -159.10579234972678,
+        "min_derivative_pct": 2.6836380832282467,
+        "interior_minimum": true,
+        "local_mean_success_pct": 62.0,
+        "model_success_range_pct": [
+          2.3857830657782273,
+          116.59674851175468
+        ],
+        "valid": false,
+        "issues": [
+          "유효 구간에서 성공률이 0~100% 범위를 벗어남",
+          "유효 구간에 성공률이 증가하는 부분이 있음"
+        ],
+        "validation": {
+          "trials_per_k": 30,
+          "first_seed": 2126,
+          "last_seed": 2155,
+          "points": [
+            {
+              "k": 4,
+              "prediction_pct": 100.0,
+              "measured_pct": 100.0,
+              "absolute_error_pp": 0.0
+            },
+            {
+              "k": 5,
+              "prediction_pct": 100.0,
+              "measured_pct": 100.0,
+              "absolute_error_pp": 0.0
+            },
+            {
+              "k": 6,
+              "prediction_pct": 29.0,
+              "measured_pct": 36.666666666666664,
+              "absolute_error_pp": 7.666666666666664
+            },
+            {
+              "k": 7,
+              "prediction_pct": 9.000000000000014,
+              "measured_pct": 3.3333333333333335,
+              "absolute_error_pp": 5.66666666666668
+            }
+          ],
+          "mae_pp": 3.333333333333336
+        }
+      }
+    },
+    "Q": {
+      "piecewise": {
+        "segments": [
+          {
+            "start_pct": 0.0,
+            "end_pct": 0.4807692307692308,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 0.4807692307692308,
+            "end_pct": 0.9615384615384616,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 0.9615384615384616,
+            "end_pct": 1.4423076923076923,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 1.4423076923076923,
+            "end_pct": 1.9230769230769231,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 1.9230769230769231,
+            "end_pct": 2.4038461538461537,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 2.4038461538461537,
+            "end_pct": 2.8846153846153846,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 2.8846153846153846,
+            "end_pct": 3.3653846153846154,
+            "start_success_pct": 100.0,
+            "end_success_pct": 52.0,
+            "slope": -99.84,
+            "area": 36.53846153846154
+          },
+          {
+            "start_pct": 3.3653846153846154,
+            "end_pct": 3.8461538461538463,
+            "start_success_pct": 52.0,
+            "end_success_pct": 22.0,
+            "slope": -62.4,
+            "area": 17.78846153846154
+          },
+          {
+            "start_pct": 3.8461538461538463,
+            "end_pct": 4.326923076923077,
+            "start_success_pct": 22.0,
+            "end_success_pct": 5.0,
+            "slope": -35.36,
+            "area": 6.490384615384615
+          },
+          {
+            "start_pct": 4.326923076923077,
+            "end_pct": 4.8076923076923075,
+            "start_success_pct": 5.0,
+            "end_success_pct": 3.0,
+            "slope": -4.16,
+            "area": 1.9230769230769231
+          },
+          {
+            "start_pct": 4.8076923076923075,
+            "end_pct": 5.288461538461538,
+            "start_success_pct": 3.0,
+            "end_success_pct": 0.0,
+            "slope": -6.24,
+            "area": 0.7211538461538461
+          },
+          {
+            "start_pct": 5.288461538461538,
+            "end_pct": 5.769230769230769,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 5.769230769230769,
+            "end_pct": 6.730769230769231,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 6.730769230769231,
+            "end_pct": 7.211538461538462,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 7.211538461538462,
+            "end_pct": 7.6923076923076925,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 7.6923076923076925,
+            "end_pct": 8.173076923076923,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 8.173076923076923,
+            "end_pct": 10.096153846153847,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          }
+        ],
+        "steepest_index": 6,
+        "area": 351.9230769230769,
+        "mean_success_pct": 34.857142857142854,
+        "range_pct": [
+          0.0,
+          10.096153846153847
+        ]
+      },
+      "cubic": {
+        "points": [
+          {
+            "k": 5,
+            "success_pct": 100.0
+          },
+          {
+            "k": 6,
+            "success_pct": 100.0
+          },
+          {
+            "k": 7,
+            "success_pct": 52.0
+          },
+          {
+            "k": 8,
+            "success_pct": 22.0
+          }
+        ],
+        "k0": 5,
+        "range_pct": [
+          2.4038461538461537,
+          3.8461538461538463
+        ],
+        "coefficients": [
+          11.0,
+          -57.0,
+          46.0,
+          100.0
+        ],
+        "exact_coefficients": [
+          "11",
+          "-57",
+          "46",
+          "100"
+        ],
+        "derivative_coefficients": [
+          33.0,
+          -114.0,
+          46.0
+        ],
+        "equation": "11u³ − 57u² + 46u + 100",
+        "derivative_equation": "33u² − 114u + 46",
+        "degree": 3,
+        "vertex_u": 1.7272727272727273,
+        "min_derivative_u": 1.7272727272727273,
+        "min_derivative": -52.45454545454545,
+        "min_derivative_per_damage_pct": -109.10545454545455,
+        "min_derivative_pct": 3.234265734265734,
+        "interior_minimum": true,
+        "local_mean_success_pct": 72.25,
+        "model_success_range_pct": [
+          21.99402892860826,
+          110.17126032759006
+        ],
+        "valid": false,
+        "issues": [
+          "유효 구간에서 성공률이 0~100% 범위를 벗어남",
+          "유효 구간에 성공률이 증가하는 부분이 있음"
+        ],
+        "validation": {
+          "trials_per_k": 30,
+          "first_seed": 2126,
+          "last_seed": 2155,
+          "points": [
+            {
+              "k": 5,
+              "prediction_pct": 100.0,
+              "measured_pct": 100.0,
+              "absolute_error_pp": 0.0
+            },
+            {
+              "k": 6,
+              "prediction_pct": 100.0,
+              "measured_pct": 100.0,
+              "absolute_error_pp": 0.0
+            },
+            {
+              "k": 7,
+              "prediction_pct": 52.0,
+              "measured_pct": 40.0,
+              "absolute_error_pp": 12.0
+            },
+            {
+              "k": 8,
+              "prediction_pct": 22.0,
+              "measured_pct": 10.0,
+              "absolute_error_pp": 12.0
+            }
+          ],
+          "mae_pp": 6.0
+        }
+      }
+    },
+    "H": {
+      "piecewise": {
+        "segments": [
+          {
+            "start_pct": 0.0,
+            "end_pct": 0.4807692307692308,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 0.4807692307692308,
+            "end_pct": 0.9615384615384616,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 0.9615384615384616,
+            "end_pct": 1.4423076923076923,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 1.4423076923076923,
+            "end_pct": 1.9230769230769231,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 1.9230769230769231,
+            "end_pct": 2.4038461538461537,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 2.4038461538461537,
+            "end_pct": 2.8846153846153846,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 2.8846153846153846,
+            "end_pct": 3.3653846153846154,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 3.3653846153846154,
+            "end_pct": 3.8461538461538463,
+            "start_success_pct": 100.0,
+            "end_success_pct": 100.0,
+            "slope": 0.0,
+            "area": 48.07692307692308
+          },
+          {
+            "start_pct": 3.8461538461538463,
+            "end_pct": 4.326923076923077,
+            "start_success_pct": 100.0,
+            "end_success_pct": 73.0,
+            "slope": -56.16,
+            "area": 41.58653846153846
+          },
+          {
+            "start_pct": 4.326923076923077,
+            "end_pct": 4.8076923076923075,
+            "start_success_pct": 73.0,
+            "end_success_pct": 43.0,
+            "slope": -62.4,
+            "area": 27.884615384615383
+          },
+          {
+            "start_pct": 4.8076923076923075,
+            "end_pct": 5.288461538461538,
+            "start_success_pct": 43.0,
+            "end_success_pct": 15.0,
+            "slope": -58.24,
+            "area": 13.942307692307692
+          },
+          {
+            "start_pct": 5.288461538461538,
+            "end_pct": 5.769230769230769,
+            "start_success_pct": 15.0,
+            "end_success_pct": 8.0,
+            "slope": -14.56,
+            "area": 5.528846153846154
+          },
+          {
+            "start_pct": 5.769230769230769,
+            "end_pct": 6.730769230769231,
+            "start_success_pct": 8.0,
+            "end_success_pct": 0.0,
+            "slope": -8.32,
+            "area": 3.8461538461538463
+          },
+          {
+            "start_pct": 6.730769230769231,
+            "end_pct": 7.211538461538462,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 7.211538461538462,
+            "end_pct": 7.6923076923076925,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 7.6923076923076925,
+            "end_pct": 8.173076923076923,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          },
+          {
+            "start_pct": 8.173076923076923,
+            "end_pct": 10.096153846153847,
+            "start_success_pct": 0.0,
+            "end_success_pct": 0.0,
+            "slope": 0.0,
+            "area": 0.0
+          }
+        ],
+        "steepest_index": 9,
+        "area": 477.40384615384613,
+        "mean_success_pct": 47.285714285714285,
+        "range_pct": [
+          0.0,
+          10.096153846153847
+        ]
+      },
+      "cubic": {
+        "points": [
+          {
+            "k": 8,
+            "success_pct": 100.0
+          },
+          {
+            "k": 9,
+            "success_pct": 73.0
+          },
+          {
+            "k": 10,
+            "success_pct": 43.0
+          },
+          {
+            "k": 11,
+            "success_pct": 15.0
+          }
+        ],
+        "k0": 8,
+        "range_pct": [
+          3.8461538461538463,
+          5.288461538461538
+        ],
+        "coefficients": [
+          0.8333333333333334,
+          -4.0,
+          -23.833333333333332,
+          100.0
+        ],
+        "exact_coefficients": [
+          "5/6",
+          "-4",
+          "-143/6",
+          "100"
+        ],
+        "derivative_coefficients": [
+          2.5,
+          -8.0,
+          -23.833333333333332
+        ],
+        "equation": "(5/6)u³ − 4u² − (143/6)u + 100",
+        "derivative_equation": "(5/2)u² − 8u − 143/6",
+        "degree": 3,
+        "vertex_u": 1.6,
+        "min_derivative_u": 1.6,
+        "min_derivative": -30.233333333333334,
+        "min_derivative_per_damage_pct": -62.885333333333335,
+        "min_derivative_pct": 4.615384615384615,
+        "interior_minimum": true,
+        "local_mean_success_pct": 57.875,
+        "model_success_range_pct": [
+          15.0,
+          100.0
+        ],
+        "valid": true,
+        "issues": [],
+        "validation": {
+          "trials_per_k": 30,
+          "first_seed": 2126,
+          "last_seed": 2155,
+          "points": [
+            {
+              "k": 8,
+              "prediction_pct": 100.0,
+              "measured_pct": 100.0,
+              "absolute_error_pp": 0.0
+            },
+            {
+              "k": 9,
+              "prediction_pct": 73.0,
+              "measured_pct": 70.0,
+              "absolute_error_pp": 3.0
+            },
+            {
+              "k": 10,
+              "prediction_pct": 43.0,
+              "measured_pct": 36.666666666666664,
+              "absolute_error_pp": 6.333333333333336
+            },
+            {
+              "k": 11,
+              "prediction_pct": 15.0,
+              "measured_pct": 23.333333333333332,
+              "absolute_error_pp": 8.333333333333332
+            }
+          ],
+          "mae_pp": 4.416666666666667
+        }
+      }
+    }
+  }
+}

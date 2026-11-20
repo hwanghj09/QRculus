@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "modules": 21,
+  "message": "TEST01",
+  "mask_pattern": 1,
+  "levels": [
+    "L",
+    "M",
+    "Q",
+    "H"
+  ],
+  "box_size": 10,
+  "quiet_zone": 4,
+  "reserved_modules": 233,
+  "eligible_modules": 208,
+  "target_pcts": [
+    0,
+    0.5,
+    1,
+    1.5,
+    2,
+    2.5,
+    3,
+    3.5,
+    4,
+    4.5,
+    5,
+    5.5,
+    6,
+    6.5,
+    7,
+    7.5,
+    8,
+    10
+  ],
+  "trials": 100,
+  "seed_base": 2026,
+  "sample_targets": [
+    0,
+    3,
+    6,
+    10
+  ],
+  "run_id": "20261119T235639Z-b9c239b5cdd8",
+  "rng_rule": "numpy.random.default_rng(seed_base + trial).permutation(208), row-major coordinates",
+  "hash_rule": "SHA-256 of 290×290 uint8 pixels in C order"
+}
