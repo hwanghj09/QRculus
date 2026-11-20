@@ -203,7 +203,7 @@ def check_manuscript(directory, manuscript):
     return "Eight sections, source URLs, run provenance and measured results"
 
 
-def check_pdf(pdf, student_id, student_name):
+def check_pdf(pdf, student_id, student_name, *, title=None):
     from pypdf import PdfReader
 
     from .report import TITLE
@@ -224,7 +224,7 @@ def check_pdf(pdf, student_id, student_name):
     require(sizes and all(9.98 <= size <= 11.02 for size in sizes),
             f"Rendered text sizes out of 10–11pt range: {sorted({round(size, 3) for size in sizes})}")
     first = reader.pages[0].extract_text()
-    require(TITLE in first and "학번" in first and "이름" in first, "PDF title or identity labels missing")
+    require((title or TITLE) in first and "학번" in first and "이름" in first, "PDF title or identity labels missing")
     require(bool(student_id) == bool(student_name), "Provide both student ID and name to check the submission PDF")
     if student_id:
         compact = "".join(first.split())

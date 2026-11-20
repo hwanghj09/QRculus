@@ -39,6 +39,20 @@ def make_parser():
         default = Path("results/pink_v2/smoke" if name == "smoke" else "results/pink_v2")
         pink.add_argument("--out", type=Path, default=default)
         pink.add_argument("--workers", type=int, default=2)
+    pink = commands.add_parser("pink-analyze", help="Build v2 tables, models and figures")
+    pink.add_argument("--input", type=Path, default=Path("results/pink_v2"))
+    for name in ("report", "validate"):
+        pink = commands.add_parser(f"pink-{name}", help=f"Run pink occlusion {name}")
+        pink.add_argument("--input", type=Path, default=Path("results/pink_v2"))
+        pink.add_argument("--manuscript", type=Path)
+        pink.add_argument("--student-id")
+        pink.add_argument("--student-name")
+        if name == "report":
+            pink.add_argument("--out", type=Path, default=Path("reports/pink_v2_3pages.pdf"))
+            pink.add_argument("--preview", action="store_true")
+        else:
+            pink.add_argument("--pdf", type=Path, default=Path("reports/pink_v2_3pages.pdf"))
+            pink.add_argument("--qa-out", type=Path)
     return parser
 
 
@@ -51,6 +65,26 @@ def main(argv=None):
 
             run_pink(args.config, args.out, args.command.removeprefix("pink-"), args.workers)
             return 0
+
+        if args.command == "pink-analyze":
+            from .pink_analysis import analyze_pink
+
+            analyze_pink(args.input)
+            return 0
+
+        if args.command == "pink-report":
+            from .pink_report import export_pink_report
+
+            export_pink_report(args.input, args.out, args.manuscript,
+                               args.student_id, args.student_name, args.preview)
+            return 0
+
+        if args.command == "pink-validate":
+            from .pink_validation import validate_pink
+
+            ok = validate_pink(args.input, args.pdf, args.manuscript or args.pdf.with_suffix(".md"),
+                               args.student_id, args.student_name, args.qa_out)
+            return int(not ok)
 
         if args.command == "preflight":
             from .checks import preflight
