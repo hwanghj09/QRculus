@@ -132,6 +132,15 @@ def append_row(handle, row):
     handle.write((json.dumps(row, ensure_ascii=True, separators=(",", ":")) + "\n").encode("ascii"))
 
 
+def record_decoder_event(out, pid, level, shape, repeat, target, kind, detail):
+    path = checkpoints(out) / f"{pid}.decoder-events.jsonl"
+    with path.open("ab", buffering=0) as handle:
+        append_row(handle, {
+            "payload_id": pid, "level": level, "mask_type": shape, "repeat_id": repeat,
+            "target_pct": target, "event": kind, "detail": detail,
+        })
+
+
 def trial_row(meta, payload, level, shape, repeat, target, seed, start,
               reserved, black, observation, original_sha, damaged_sha):
     k = covered_count(target)
@@ -222,7 +231,12 @@ def process_payload(out, payload, meta):
                     if index >= skip:
                         try:
                             bgr = cv2.cvtColor(rgb, cv2.COLOR_RGB2BGR)
-                            obs = decode_observation(bgr, payload["payload"], detector)
+                            obs = decode_observation(
+                                bgr, payload["payload"], detector,
+                                on_error=lambda kind, detail: record_decoder_event(
+                                    out, pid, level, shape, repeat_id, target, kind, detail
+                                ),
+                            )
                         except (cv2.error, UnicodeError) as error:
                             raise RuntimeError(f"Decoder failure at {pid}/{level}/{shape}/{repeat_id}/{target}") from error
                         digest = rgb_hash(rgb)
@@ -265,6 +279,15 @@ def finalize(out, payloads, meta, manifest):
     temp = raw / "mask_orders.tmp"
     write_csv(temp, MASK_FIELDS, mask_rows())
     temp.replace(raw / "mask_orders.csv")
+
+    event_fields = ("payload_id", "level", "mask_type", "repeat_id", "target_pct", "event", "detail")
+    events = []
+    for path in sorted(checkpoints(out).glob("*.decoder-events.jsonl")):
+        with path.open(encoding="ascii") as handle:
+            events.extend(json.loads(line) for line in handle)
+    temp = raw / "decoder_events.tmp"
+    write_csv(temp, event_fields, events)
+    temp.replace(raw / "decoder_events.csv")
 
 
 def run_pink(config_path, out, mode, workers=2):
