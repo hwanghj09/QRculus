@@ -1,0 +1,35 @@
+{
+  "study_id": "pink_occlusion_v2",
+  "seed_base": 2026,
+  "payload": {
+    "count": 100,
+    "length": 6,
+    "charset": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+    "encoding_mode": "alphanumeric",
+    "train_count": 80,
+    "validation_count": 20
+  },
+  "qr": {
+    "version": 1,
+    "mask_pattern": 1,
+    "levels": ["L", "M", "Q", "H"],
+    "box_size": 10,
+    "quiet_zone": 4,
+    "fit": false
+  },
+  "occlusion": {
+    "pixel_color_rgb": [255, 105, 180],
+    "opacity": 1.0,
+    "region": "all_21x21_symbol_modules",
+    "target_pcts": [0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 15, 20, 25, 30, 40],
+    "mask_types": ["scattered", "clustered"],
+    "repetitions_per_nonzero_condition": 10,
+    "baseline_repetitions_per_payload_level": 1,
+    "coordinate_order": "row-major",
+    "rng_seed_derivation": "first_8_bytes_big_endian_sha256('2026|payload_id|repeat_id|mask_type')"
+  },
+  "decoder": "opencv_QRCodeDetector_detectAndDecode",
+  "expected_total_decoder_calls": 112400,
+  "output_dir": "results/pink_v2",
+  "preserve_legacy_results": true
+}
