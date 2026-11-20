@@ -33,6 +33,12 @@ def make_parser():
     report.add_argument("--student-id")
     report.add_argument("--student-name")
     report.add_argument("--preview", action="store_true", help="Use blank identity fields")
+    for name in ("preflight", "smoke", "run"):
+        pink = commands.add_parser(f"pink-{name}", help=f"Run pink occlusion {name}")
+        pink.add_argument("--config", type=Path, default=Path("configs/pink_occlusion_v2.json"))
+        default = Path("results/pink_v2/smoke" if name == "smoke" else "results/pink_v2")
+        pink.add_argument("--out", type=Path, default=default)
+        pink.add_argument("--workers", type=int, default=2)
     return parser
 
 
@@ -40,6 +46,12 @@ def main(argv=None):
     parser = make_parser()
     args = parser.parse_args(argv)
     try:
+        if args.command in ("pink-preflight", "pink-smoke", "pink-run"):
+            from .pink_experiment import run_pink
+
+            run_pink(args.config, args.out, args.command.removeprefix("pink-"), args.workers)
+            return 0
+
         if args.command == "preflight":
             from .checks import preflight
 

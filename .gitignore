@@ -9,3 +9,7 @@ results/*.failed-*/
 results/*.recovered-*/
 **/.*.qr-lock/
 reports/*제출용*
+
+# QRculus 2.0 temporary run state
+**/.pink-checkpoints/
+results/pink_v2/smoke/
